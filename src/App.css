@@ -1,38 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serif;
+}    
 .App {
-  text-align: center;
+    width:100%;
+    height:100vh;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(1.jpg);
+    color: white;
+
+    padding-top: 10vh;
+    gap: 2vw;
+}
+
+.Filters{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.Filters-Btn{
+    font-size: large;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    width: 16vw;
+    height: 5vh;
+    text-align: center;
+}
+
+.Filters-Btn.selected{
+    color: #777;
+    background-color:#f25602;
+    border-color: #f25602;
+}
+
+.ADD_TODO{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.Add-Btn{
+    font-size: large;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    width: 16vw;
+    height: 5vh;
+    text-align: center;
+}
+
+.Add-input{
+    font-size: large;
+    font-weight: 500;
+    color: #777;
+    width: 32.5vw;
+    height: 4.5vh;
+    text-align: center;
+}
+
+.ToDoList{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+
+.ToDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+}
+
+.Todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.Todo-input{
+    font-size: large;
+    font-weight: 500;
+    background-color: #555;
+    color: white;
+    width: 33vw;
+    height: 4.5vh;
+    text-align: center;
+    outline: none;
+    border: hidden;
+}
+
+.Todo-input.enabled{
+    background-color: white;
+    color: #555;
+}
+
+.Todo-Checkbox{
+    height: 5vh;
+    width: 4.8vw;
+}
+
+.Todo-Delete{
+    font-size: large;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    width: 11.8vw;
+    height: 5vh;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
